@@ -339,6 +339,15 @@ pragma-test/
 
 ![Diagrama de Tablas](assets/db.png)
 
+📊 transactions (Tabla Principal)
+Almacena todas las transacciones procesadas desde los archivos CSV. Cada registro representa una transacción individual con información de precio, usuario, timestamp y metadatos de procesamiento. Incluye índices optimizados para consultas frecuentes por timestamp, precio, usuario y archivo fuente.
+
+📦 batch_metadata (Control de Procesamiento)
+Registra información de cada micro-batch procesado durante la ingesta. Mantiene el estado del procesamiento, número de filas, tiempos de ejecución y capturas de estadísticas para auditoría y monitoreo del pipeline.
+
+🔍 stats_verification (Auditoría de Estadísticas)
+Almacena los resultados de las verificaciones automáticas que comparan las estadísticas incrementales con las consultas directas a la base de datos. Garantiza la integridad y precisión del motor de estadísticas O(1).
+
 ## 🧪 Verificación del Reto
 
 El sistema implementa verificación automática del cumplimiento de requerimientos:
@@ -366,3 +375,16 @@ El sistema implementa verificación automática del cumplimiento de requerimient
 - Procesamiento separado de validation.csv
 - Estadísticas antes/después
 - Detección automática de cambios
+
+# Demo versión gráfica Streamlit
+
+![Demo Streamlit](assets/str1.png)
+
+![Demo Streamlit](assets/str2.png)
+
+![Demo Streamlit](assets/str3.png)
+
+![Demo Streamlit](assets/str4.png)
+
+![Demo Streamlit](assets/str5.png)
+

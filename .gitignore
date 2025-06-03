@@ -44,7 +44,7 @@ ehthumbs.db
 Thumbs.db
 
 # Proyecto específico
-data/raw/
+# data/ 
 data/pipeline.db
 logs/*.log
 *.db
@@ -69,3 +69,4 @@ airflow_config/webserver_config.py
 *.json
 *.parquet
 *.txt
+*.zip

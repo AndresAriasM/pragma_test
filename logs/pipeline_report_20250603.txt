@@ -1,0 +1,15 @@
+📊 REPORTE DE PIPELINE - Tue Jun  3 02:25:09 -05 2025
+=================================
+✅ Pipeline ejecutado exitosamente
+📁 Archivos Bronze:
+total 48
+drwxr-xr-x  8 andresariasmedina  staff   256 Jun  3 02:25 .
+drwxr-xr-x  6 andresariasmedina  staff   192 Jun  3 02:25 ..
+-rw-r--r--  1 andresariasmedina  staff  2732 Jun  3 02:25 2012-1.parquet
+-rw-r--r--  1 andresariasmedina  staff  2788 Jun  3 02:25 2012-2.parquet
+-rw-r--r--  1 andresariasmedina  staff  2820 Jun  3 02:25 2012-3.parquet
+-rw-r--r--  1 andresariasmedina  staff  2794 Jun  3 02:25 2012-4.parquet
+-rw-r--r--  1 andresariasmedina  staff  2811 Jun  3 02:25 2012-5.parquet
+-rw-r--r--  1 andresariasmedina  staff  2574 Jun  3 02:25 validation.parquet
+📊 Base de datos:
+-rw-r--r--  1 andresariasmedina  staff  69632 Jun  3 02:25 data/pipeline.db

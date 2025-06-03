@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Proyecto específico
+data/raw/
+data/pipeline.db
+logs/*.log
+*.db
+
+# Airflow
+airflow_config/airflow.db
+airflow_config/logs/
+airflow_config/airflow-webserver.pid
+airflow_config/standalone_admin_password.txt
+airflow_config/webserver_config.py
+.airflow_env
+
+# Archivos temporales
+*.tmp
+*.temp
+.cache/

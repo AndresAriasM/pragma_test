@@ -61,3 +61,11 @@ airflow_config/webserver_config.py
 *.tmp
 *.temp
 .cache/
+
+# Archivos
+*.csv
+*.xlsx
+*.xls
+*.json
+*.parquet
+*.txt

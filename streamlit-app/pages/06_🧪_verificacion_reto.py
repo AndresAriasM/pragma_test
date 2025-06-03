@@ -1,8 +1,7 @@
 # streamlit_app/pages/06_🧪_verificacion_reto.py
 """
-🧪 VERIFICACIÓN DEL RETO - VERSIÓN CORREGIDA
+🧪 VERIFICACIÓN DEL RETO 
 ============================================
-Página dedicada para mostrar la comprobación exacta de resultados del punto 3:
 ● Estadísticas en ejecución con información de batches
 ● Consultas directas a BD
 ● Ejecutar validation.csv y mostrar cambios
@@ -25,7 +24,7 @@ PROJECT_ROOT = Path(__file__).parent.parent.parent
 SRC_PATH = PROJECT_ROOT / "src"
 sys.path.insert(0, str(SRC_PATH))
 
-st.set_page_config(page_title="Verificación del Reto", page_icon="🧪", layout="wide")
+st.set_page_config(page_title="Pragma Challenge", page_icon="🧪", layout="wide")
 
 def main():
     st.title("🧪 Verificación del Reto Técnico")

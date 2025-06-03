@@ -10,6 +10,9 @@ Pipeline completo de ingeniería de datos que implementa una arquitectura medall
     </p>
 </div>
 
+## 🤖 Desarrollo Asistido por IA
+Este proyecto fue desarrollado con la asistencia de Claude (Anthropic) como herramienta de ingeniería de software, quien contribuyó significativamente en las pruebas requeridas, implementación de buenas prácticas y optimización del código.
+
 ## ✨ Características Principales
 
 - 🥉 **Arquitectura Medallion**: Bronze layer con formato Parquet optimizado

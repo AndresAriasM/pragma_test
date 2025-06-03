@@ -1,8 +1,7 @@
 #src/data_flow/download_data.py
 """
 Script para descargar datos desde Google Drive
-Parte del pipeline de ingeniería de datos - Micro Batches
-VERSIÓN NO INTERACTIVA PARA AIRFLOW
+
 """
 
 import os
@@ -158,7 +157,7 @@ class DataDownloader:
     def download_challenge_data(self, force_download: bool = False) -> Tuple[bool, Optional[str]]:
         """
         Descarga los datos específicos del challenge desde Google Drive
-        ✅ VERSIÓN NO INTERACTIVA - Compatible con Airflow
+        VERSIÓN NO INTERACTIVA - Compatible con Airflow
         
         Args:
             force_download: Si True, descarga aunque el archivo ya exista

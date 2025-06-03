@@ -1,6 +1,6 @@
-# src/pipeline/database_setup.py - VERSIÓN CORREGIDA
+# src/pipeline/database_setup.py 
 """
-Database Manager para el pipeline de datos - CORREGIDO
+Database Manager para el pipeline de datos 
 ✅ Maneja SQLite/PostgreSQL con esquemas optimizados
 ✅ FIXED: Problema de conexiones SQLAlchemy vs SQLite nativo
 """

@@ -2,7 +2,7 @@
 🚀 CONTROL DEL PIPELINE
 ======================
 Página para ejecutar y monitorear el pipeline de datos
-✅ FIXED: Problema de serialización Arrow con tipos mixtos
+
 """
 
 import streamlit as st

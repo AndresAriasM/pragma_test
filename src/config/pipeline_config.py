@@ -1,7 +1,6 @@
 # src/config/pipeline_config.py
 """
 Configuración general del pipeline de datos
-✅ Configuraciones centralizadas para todo el proyecto
 """
 
 import os

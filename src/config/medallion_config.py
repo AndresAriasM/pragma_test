@@ -28,9 +28,8 @@ BRONZE_CONFIG = {
     "preserve_index": False,
     "schema_validation": True,
     "add_metadata": True,  # Agregar metadatos de origen
-    "partitioning": None,  # Por ahora sin particionado
-    # ✅ CONFIGURACIÓN DE MICRO-BATCHES PARA CUMPLIR REQUERIMIENTOS
-    "micro_batch_size": 1000,  # Filas por micro-batch (ajustable según memoria)
+    "partitioning": None,  
+    "micro_batch_size": 1000,  # Filas por micro-batch 
     "memory_optimization": True,  # Limpiar memoria entre batches
     "incremental_write": True,  # Escritura incremental de Parquet
     "progress_logging": 5  # Log progreso cada N batches

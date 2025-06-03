@@ -1,6 +1,6 @@
 # src/config/database_config.py
 """
-Configuración de base de datos - VERSIÓN CORREGIDA
+Configuración de base de datos 
 """
 
 import os

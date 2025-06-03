@@ -3,7 +3,6 @@
 🚀 DAG SIMPLIFICADO - EJECUTA SCRIPTS DIRECTAMENTE
 =================================================
 En lugar de reimplementar la lógica, simplemente ejecuta los scripts que ya funcionan.
-¡Mucho más simple y robusto!
 """
 
 from datetime import datetime, timedelta

@@ -1,5 +1,5 @@
 #!/bin/bash
-# scripts/force_cleanup_airflow.sh - Limpieza forzada y completa
+# scripts/force_cleanup_airflow.sh 
 
 PROJECT_ROOT=$(pwd)
 AIRFLOW_HOME="$PROJECT_ROOT/airflow_config"

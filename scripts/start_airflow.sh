@@ -1,5 +1,5 @@
 #!/bin/bash
-# scripts/start_airflow_single.sh - Inicio único con lock para evitar duplicados
+# scripts/start_airflow.sh 
 
 PROJECT_ROOT=$(pwd)
 AIRFLOW_HOME="$PROJECT_ROOT/airflow_config"

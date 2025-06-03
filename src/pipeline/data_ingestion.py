@@ -1,6 +1,6 @@
 # src/pipeline/data_ingestion.py - VERSIÓN CORREGIDA
 """
-Data Ingestion Pipeline - Núcleo del Reto
+Data Ingestion Pipeline - 
 ✅ Bronze (Parquet) → Base de Datos + Estadísticas Incrementales
 ✅ Procesamiento en micro-batches (cumple requerimiento de memoria)
 ✅ Estadísticas O(1) sin tocar datos ya cargados
@@ -35,8 +35,6 @@ logger = logging.getLogger(__name__)
 
 class DataIngestionPipeline:
     """
-    Pipeline principal que implementa los requerimientos del reto:
-    
     ✅ Cargar archivos CSV → BD (desde Bronze Parquet optimizado)
     ✅ Estadísticas incrementales en tiempo real (count, avg, min, max)
     ✅ NO recalcular desde BD (O(1) vs O(n))
@@ -181,7 +179,7 @@ class DataIngestionPipeline:
                 self.stats_engine.update_batch(prices, batch_info_for_stats)
                 current_stats = self.stats_engine.get_current_stats()
                 
-                # 3. ✅ MOSTRAR PROGRESO EN TIEMPO REAL (REQUERIMIENTO DEL RETO)
+                # 3. ✅ MOSTRAR PROGRESO EN TIEMPO REAL
                 logger.info(f"     💾 BD: ✅ Insertado (batch_id: {batch_id[:8]}...)")
                 logger.info(f"     📊 Stats: {self.stats_engine.format_stats()}")
                 
@@ -432,7 +430,7 @@ class DataIngestionPipeline:
         logger.info(f"\n📊 ESTADÍSTICAS DESPUÉS DE VALIDATION:")
         logger.info(f"   {self.stats_engine.format_stats()}")
         
-        # ✅ MOSTRAR CAMBIOS (REQUERIMIENTO DEL RETO)
+        # ✅ MOSTRAR CAMBIOS 
         logger.info(f"\n📈 CAMBIOS DETECTADOS:")
         logger.info("-" * 25)
         
@@ -522,12 +520,11 @@ class DataIngestionPipeline:
     def run_complete_pipeline(self) -> Dict[str, Any]:
         """
         Ejecuta el pipeline completo: archivos principales + validation
-        ✅ IMPLEMENTA TODOS LOS REQUERIMIENTOS DEL RETO
         
         Returns:
             Dict con resultado completo
         """
-        logger.info("🚀 EJECUTANDO PIPELINE COMPLETO - RETO DE INGENIERÍA DE DATOS")
+        logger.info("🚀 EJECUTANDO PIPELINE COMPLETO")
         logger.info("=" * 70)
         
         complete_result = {
@@ -603,8 +600,7 @@ def main():
     )
     
     logger.info("🚀 INICIANDO DATA INGESTION PIPELINE")
-    logger.info("Implementando requerimientos completos del reto de ingeniería de datos")
-    
+
     pipeline = None
     try:
         # Crear y ejecutar pipeline
@@ -617,10 +613,10 @@ def main():
         result = pipeline.run_complete_pipeline()
         
         if result['overall_success']:
-            logger.info("🎉 RETO COMPLETADO EXITOSAMENTE")
+            logger.info("🎉 PIPELINE COMPLETADO EXITOSAMENTE")
             return 0
         else:
-            logger.error("❌ RETO COMPLETADO CON ERRORES")
+            logger.error("❌ PIPELINE COMPLETADO CON ERRORES")
             return 1
             
     except Exception as e:

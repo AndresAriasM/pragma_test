@@ -1,7 +1,7 @@
 # src/pipeline/statistics_engine.py
 """
 Motor de Estadísticas Incrementales O(1)
-✅ CUMPLE REQUERIMIENTO: NO recalcula desde BD, mantiene estadísticas en memoria
+
 """
 
 import logging

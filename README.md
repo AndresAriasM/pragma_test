@@ -13,6 +13,9 @@ Pipeline completo de ingeniería de datos que implementa una arquitectura medall
 ## 🤖 Desarrollo Asistido por IA
 Este proyecto fue desarrollado con la asistencia de Claude (Anthropic) como herramienta de ingeniería de software, quien contribuyó significativamente en las pruebas requeridas, implementación de buenas prácticas y optimización del código.
 
+## 🎯 Objetivo del Reto
+Este proyecto implementa la solución completa al reto técnico de Pragma, cuyo objetivo principal es demostrar competencias en ingeniería de datos moderna mediante la creación de un pipeline que procese archivos CSV de transacciones sin cargar datasets completos en memoria. El desafío requiere: descargar datos desde Google Drive, implementar estadísticas incrementales que calculen count, promedio, mínimo y máximo en tiempo real sin recalcular desde la base de datos, procesar validation.csv mostrando cambios en las estadísticas, y verificar la precisión comparando resultados incrementales con consultas SQL directas. 
+
 ## ✨ Características Principales
 
 - 🥉 **Arquitectura Medallion**: Bronze layer con formato Parquet optimizado
